@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="password" style="display: flex;flex-direction: column;align-items: center;">
+      <h3>请在此输入权鼎科技的“权鼎科技”wifi密码</h3>
+      <input type="password" name="" id="" style="margin: 50px 0;width: 200px;height: 30px;" />
+      <button onclick="confirm()" style="width: 200px;height: 30px;">确定</button>
+    </div>
+    <div class="box" style="display: none">
+      <h1 style="text-align: center">前端程序dist下载</h1>
+      <h3>三秒后台</h3>
+      <a href="http://sywdebug.github.io/public/dist1.zip" download>3s华宇科技</a>接口：127.0.0.1:9000<br />
+      <a href="http://sywdebug.github.io/public/dist2.zip" download>3s权鼎科技</a>接口：127.0.0.1:9000<br />
+      <h3>三十秒后台</h3>
+      <a href="http://sywdebug.github.io/public/dist3.zip" download>李主任线下后台</a>接口：127.0.0.1:8000<br />
+      <h3>多路采集</h3>
+      <a href="http://sywdebug.github.io/public/dist4.zip" download>多路采集部队版[安信智文]</a>接口：127.0.0.1:8000<br />
+      <a href="http://sywdebug.github.io/public/dist5.zip" download>多路采集监区版[华语科技]</a>接口：127.0.0.1:8000<br />
+      <a href="http://sywdebug.github.io/public/dist6.zip" download>多路采集学校版[权鼎科技]</a>接口：127.0.0.1:8000<br />
+    </div>
+    <script>
+      function confirm() {
+        if (document.getElementsByTagName("input")[0].value == "qdkj1508!") {
+          document.getElementsByClassName("box")[0].style = "display:block";
+          document.getElementsByClassName("password")[0].style = "display:none";
+          document.getElementsByTagName("input")[0].value =""
+        } else {
+          alert("密码错误");
+        }
+      }
+    </script>
+  </body>
+</html>
